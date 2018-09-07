@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="RxNetworkApiClient-Example" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxNetworkApiClient" TARGET_NAME="RxNetworkApiClient_Example" CONFIG_NAME="Debug" SCHEME_NAME="RxNetworkApiClient-Example" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="RxNetworkApiClient" RUN_TARGET_NAME="RxNetworkApiClient_Example" MAKE_ACTIVE="TRUE">
+    <method v="2">
+      <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,30 @@
+{
+  "name": "RxNetworkApiClient",
+  "version": "0.1.0",
+  "summary": "A short description of RxNetworkApiClient.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/pro-web-coder/RxNetworkApiClient",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "pro-web-coder": "slava.kornienko16@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/pro-web-coder/RxNetworkApiClient.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RxNetworkApiClient/Classes/**/*",
+  "dependencies": {
+    "RxSwift": [
+
+    ],
+    "SwiftyJSON": [
+
+    ]
+  }
+}

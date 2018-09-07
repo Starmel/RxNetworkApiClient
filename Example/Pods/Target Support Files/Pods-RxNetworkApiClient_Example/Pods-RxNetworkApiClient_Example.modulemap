@@ -1,0 +1,6 @@
+framework module Pods_RxNetworkApiClient_Example {
+  umbrella header "Pods-RxNetworkApiClient_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

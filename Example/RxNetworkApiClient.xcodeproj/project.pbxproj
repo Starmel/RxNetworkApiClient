@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5860303EEEF6C47C8EB18CA3 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586032E21C9F493B11F48B64 /* Requests.swift */; };
+		58603312AFAD7732C33F3949 /* TodoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586031171403E7015091AE07 /* TodoEntity.swift */; };
 		5AA56378AF505CC1290E6CA3 /* Pods_RxNetworkApiClient_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE616D3F4C5017920D12B9DC /* Pods_RxNetworkApiClient_Example.framework */; };
 		5E78881C867F7E233CB4E305 /* Pods_RxNetworkApiClient_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C6879050D92FFB15B52CE7 /* Pods_RxNetworkApiClient_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -28,9 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1346152A7975CAEC922AF557 /* RxNetworkApiClient.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RxNetworkApiClient.podspec; path = ../RxNetworkApiClient.podspec; sourceTree = "<group>"; };
+		1346152A7975CAEC922AF557 /* RxNetworkApiClient.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxNetworkApiClient.podspec; path = ../RxNetworkApiClient.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		37347BC06CEF9CCAEA6EFEB3 /* Pods-RxNetworkApiClient_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNetworkApiClient_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxNetworkApiClient_Example/Pods-RxNetworkApiClient_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		48C6879050D92FFB15B52CE7 /* Pods_RxNetworkApiClient_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxNetworkApiClient_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		586031171403E7015091AE07 /* TodoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoEntity.swift; sourceTree = "<group>"; };
+		586032E21C9F493B11F48B64 /* Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RxNetworkApiClient_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxNetworkApiClient_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,9 +48,9 @@
 		6E714154DAD84FC0E1998533 /* Pods-RxNetworkApiClient_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNetworkApiClient_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxNetworkApiClient_Example/Pods-RxNetworkApiClient_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CE616D3F4C5017920D12B9DC /* Pods_RxNetworkApiClient_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxNetworkApiClient_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F74BD923F5569FBB92E1F6 /* Pods-RxNetworkApiClient_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNetworkApiClient_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxNetworkApiClient_Tests/Pods-RxNetworkApiClient_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DDBB5A00AD527275C1E986A4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DDBB5A00AD527275C1E986A4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E0DE291BD7B8D58B6B4DE9D2 /* Pods-RxNetworkApiClient_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNetworkApiClient_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxNetworkApiClient_Tests/Pods-RxNetworkApiClient_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		EF7FA8BC457B52B3E4ACFE5A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EF7FA8BC457B52B3E4ACFE5A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				586032E21C9F493B11F48B64 /* Requests.swift */,
+				586031171403E7015091AE07 /* TodoEntity.swift */,
 			);
 			name = "Example for RxNetworkApiClient";
 			path = RxNetworkApiClient;
@@ -266,17 +272,17 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxNetworkApiClient_Example/Pods-RxNetworkApiClient_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/RxNetworkApiClient/RxNetworkApiClient.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxNetworkApiClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -288,15 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RxNetworkApiClient_Tests-checkManifestLockResult.txt",
 			);
@@ -310,15 +312,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-RxNetworkApiClient_Example-checkManifestLockResult.txt",
 			);
@@ -336,6 +334,8 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				5860303EEEF6C47C8EB18CA3 /* Requests.swift in Sources */,
+				58603312AFAD7732C33F3949 /* TodoEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
