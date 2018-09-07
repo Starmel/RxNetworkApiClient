@@ -1,6 +1,6 @@
 # RxNetworkApiClient
 
-[![CI Status](https://img.shields.io/travis/pro-web-coder/RxNetworkApiClient.svg?style=flat)](https://travis-ci.org/pro-web-coder/RxNetworkApiClient)
+[![CI Status](https://img.shields.io/travis/starmel/RxNetworkApiClient.svg?style=flat)](https://travis-ci.org/starmel/RxNetworkApiClient)
 [![Version](https://img.shields.io/cocoapods/v/RxNetworkApiClient.svg?style=flat)](https://cocoapods.org/pods/RxNetworkApiClient)
 [![License](https://img.shields.io/cocoapods/l/RxNetworkApiClient.svg?style=flat)](https://cocoapods.org/pods/RxNetworkApiClient)
 [![Platform](https://img.shields.io/cocoapods/p/RxNetworkApiClient.svg?style=flat)](https://cocoapods.org/pods/RxNetworkApiClient)
@@ -22,7 +22,7 @@ pod 'RxNetworkApiClient'
 
 ## Author
 
-pro-web-coder, slava.kornienko16@gmail.com
+starmel, slava.kornienko16@gmail.com
 
 ## License
 

@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  RxNetworkApiClient
 //
-//  Created by pro-web-coder on 09/07/2018.
-//  Copyright (c) 2018 pro-web-coder. All rights reserved.
+//  Created by starmel on 09/07/2018.
+//  Copyright (c) 2018 starmel. All rights reserved.
 //
 
 import UIKit

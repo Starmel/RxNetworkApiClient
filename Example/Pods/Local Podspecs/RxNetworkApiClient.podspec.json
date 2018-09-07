@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "summary": "A short description of RxNetworkApiClient.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/pro-web-coder/RxNetworkApiClient",
+  "homepage": "https://github.com/starmel/RxNetworkApiClient",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "pro-web-coder": "slava.kornienko16@gmail.com"
+    "starmel": "slava.kornienko16@gmail.com"
   },
   "source": {
-    "git": "https://github.com/pro-web-coder/RxNetworkApiClient.git",
+    "git": "https://github.com/starmel/RxNetworkApiClient.git",
     "tag": "0.1.0"
   },
   "platforms": {
