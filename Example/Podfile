@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RxNetworkApiClient_Example' do
+  pod 'RxNetworkApiClient', :path => '../'
+
+  target 'RxNetworkApiClient_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
