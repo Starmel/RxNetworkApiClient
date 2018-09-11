@@ -15,6 +15,7 @@ public typealias FormDataFields = Dictionary<String, Any?>
 public class ApiRequest<ResponseType: Codable>: NetworkRequest {
 
     public var request: URLRequest
+    public var responseTimeout: Double = 10
     private var endpoint: ApiEndpoint
     private var query: [QueryField]? = nil
     private var path: String? = nil

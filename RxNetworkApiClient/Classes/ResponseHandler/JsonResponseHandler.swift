@@ -15,7 +15,9 @@ public class JsonResponseHandler: ResponseHandler {
 
     private let decoder = JSONDecoder()
 
-    public func handle<T: Codable>(observer: SingleObserver<T>, response: NetworkResponse) -> Bool {
+    public func handle<T: Codable>(observer: SingleObserver<T>,
+                                   request: ApiRequest<T>,
+                                   response: NetworkResponse) -> Bool {
         if let data = response.data {
             do {
                 if T.self == JSON.self {

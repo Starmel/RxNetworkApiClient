@@ -66,7 +66,7 @@
 		517B392A7E4F9FCBE169217EEA3DB8CE /* Producer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56A977D69F4A1F47795F2A84051028D /* Producer.swift */; };
 		51E2C4C2C6F8E6776A7009963AB4DE33 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C040D73339626F320FF38BF3F84B09AB /* Switch.swift */; };
 		538F5DD61DD7B8FD34637D37260DD14A /* ObservableType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82BD7CE41254A45AC630247D38392D84 /* ObservableType+Extensions.swift */; };
-		54A69278A661532273DF1E0F4016DEC8 /* BasicErrorResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F054AC8E47C7DB169FC849193DF407 /* BasicErrorResponseHandler.swift */; };
+		54A69278A661532273DF1E0F4016DEC8 /* RuNSErrorResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F054AC8E47C7DB169FC849193DF407 /* RuNSErrorResponseHandler.swift */; };
 		56CC9266A18EB02B77735D037C425A0E /* LoggingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BB700979161690BA69D6C7A90FC90C /* LoggingInterceptor.swift */; };
 		5759491631EA3A56A7DC0476DEDB545D /* Sink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501F11351347F1592C95C29D1DC4CAA /* Sink.swift */; };
 		57835E32CD099E4134F7D937D7E17B90 /* Take.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBD554A49D60A736BDD8336A7D7B177 /* Take.swift */; };
@@ -269,7 +269,7 @@
 		295B62D9DF432CC7E0E78D7F8C6010B6 /* DelaySubscription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DelaySubscription.swift; path = RxSwift/Observables/DelaySubscription.swift; sourceTree = "<group>"; };
 		2BA8AD2092B5C28FF13FC8BA6C9DB10C /* DispatchQueueConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchQueueConfiguration.swift; path = RxSwift/Schedulers/Internal/DispatchQueueConfiguration.swift; sourceTree = "<group>"; };
 		3205B05706EEEEF464409BC9A5E9EE5F /* Dematerialize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dematerialize.swift; path = RxSwift/Observables/Dematerialize.swift; sourceTree = "<group>"; };
-		32F054AC8E47C7DB169FC849193DF407 /* BasicErrorResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BasicErrorResponseHandler.swift; sourceTree = "<group>"; };
+		32F054AC8E47C7DB169FC849193DF407 /* RuNSErrorResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RuNSErrorResponseHandler.swift; sourceTree = "<group>"; };
 		335B46D4548309FB36205A2D980B2A6D /* Pods-RxNetworkApiClient_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RxNetworkApiClient_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		355F9560BEC254FC2D620224E6637A46 /* Materialize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Materialize.swift; path = RxSwift/Observables/Materialize.swift; sourceTree = "<group>"; };
 		364382EB0F6669A8005B45A7A3493F23 /* AsMaybe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsMaybe.swift; path = RxSwift/Observables/AsMaybe.swift; sourceTree = "<group>"; };
@@ -689,7 +689,7 @@
 		2B550BE38CB8EC2D23B82B0149C56F32 /* ResponseHandler */ = {
 			isa = PBXGroup;
 			children = (
-				32F054AC8E47C7DB169FC849193DF407 /* BasicErrorResponseHandler.swift */,
+				32F054AC8E47C7DB169FC849193DF407 /* RuNSErrorResponseHandler.swift */,
 				D7F9FB77B338F2BEB818CD552535C075 /* JsonResponseHandler.swift */,
 				E2519F7C55CADD7DC68A0464165C61B6 /* ResponseHandler.swift */,
 			);
@@ -1286,7 +1286,7 @@
 				B74614C14AC3548F85EEDD6798E4A855 /* ApiEndpoint.swift in Sources */,
 				28E2A9E3A700EFF62D5AAF7123A1336F /* ApiRequest.swift in Sources */,
 				9CDCA1311B5DB331970F2FD4A681A0B5 /* BaseRequest.swift in Sources */,
-				54A69278A661532273DF1E0F4016DEC8 /* BasicErrorResponseHandler.swift in Sources */,
+				54A69278A661532273DF1E0F4016DEC8 /* RuNSErrorResponseHandler.swift in Sources */,
 				F43A5779B48B31B26A3E0242E9FA3E05 /* BodyConvertible.swift in Sources */,
 				33EC5F770D49FFF7A24AC8AB7B0FD2D3 /* Header.swift in Sources */,
 				CE79BFB13E7F03AB4CC9FB74E06B8A43 /* HttpMethod.swift in Sources */,

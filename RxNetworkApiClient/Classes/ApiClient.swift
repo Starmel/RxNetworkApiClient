@@ -16,6 +16,8 @@ public protocol ApiClient {
 
     /// - Parameter request: Запрос, который нужно выполнить
     /// - Returns: Объект, который нужно вернуть при успешном завершении.
+    var interceptors: [Interceptor] { set get }
+    var responseHandlersQueue: [ResponseHandler] { set get }
     func execute<T: Codable>(request: ApiRequest<T>) -> Single<T>
 }
 
@@ -34,6 +36,7 @@ extension URLSession: URLSessionProtocol {
 public class ApiClientImp: ApiClient {
 
     private let urlSession: URLSessionProtocol
+    public var timeoutScheduler = MainScheduler.instance
     public var dispatchQueue = SerialDispatchQueueScheduler(qos: .default,
                                                             internalSerialQueueName: "network_queue")
 
@@ -66,10 +69,11 @@ public class ApiClientImp: ApiClient {
                                 break
                             }
                             isHandled = handler.handle(observer: observer,
+                                                       request: request,
                                                        response: (data, response, error))
                         }
                         if !isHandled {
-                            let errorEntity = ResponseErrorEntity()
+                            let errorEntity = ResponseErrorEntity(response)
                             errorEntity.errors.append(
                                     "Внутренняя ошибка приложения: не найдет обработчик ответа от сервера")
                             observer(.error(errorEntity))
@@ -82,7 +86,7 @@ public class ApiClientImp: ApiClient {
                 }
                 .subscribeOn(dispatchQueue)
                 .observeOn(dispatchQueue)
-                .timeout(10, scheduler: MainScheduler.instance)
+                .timeout(request.responseTimeout, scheduler: timeoutScheduler)
                 .do(onError: { error in print("network error:", error.localizedDescription) })
     }
 
@@ -106,7 +110,7 @@ public class ApiClientImp: ApiClient {
         }
     }
 
-    public static func defaultInstance(host: String) -> ApiClient {
+    public static func defaultInstance(host: String) -> ApiClientImp {
         ApiEndpoint.baseEndpoint = ApiEndpoint(host)
         let apiClient = ApiClientImp(urlSession: URLSession.shared)
         apiClient.interceptors.append(LoggingInterceptor())

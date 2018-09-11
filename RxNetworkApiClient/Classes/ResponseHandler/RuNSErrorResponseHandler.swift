@@ -7,14 +7,16 @@ import Foundation
 
 
 /// Русифицирует коды ошибок, которые могут вернуться от внутренней ошибки сети.
-public class NSErrorResponseHandler: ResponseHandler {
+public class RuNSErrorResponseHandler: ResponseHandler {
 
     public init() {
     }
 
-    public func handle<T: Codable>(observer: SingleObserver<T>, response: NetworkResponse) -> Bool {
+    public func handle<T: Codable>(observer: SingleObserver<T>,
+                                   request: ApiRequest<T>,
+                                   response: NetworkResponse) -> Bool {
         if let errorCode = (response.error as? NSError)?.code {
-            let errorResponseEntity = ResponseErrorEntity()
+            let errorResponseEntity = ResponseErrorEntity(response.urlResponse)
             let errorMessage = errorCodeToMessage(errorCode)
             errorResponseEntity.errors.append(errorMessage)
             observer(.error(errorResponseEntity))

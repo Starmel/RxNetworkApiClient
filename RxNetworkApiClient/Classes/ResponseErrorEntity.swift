@@ -6,11 +6,22 @@
 import Foundation
 
 
-class ResponseErrorEntity: LocalizedError {
+public class ResponseErrorEntity: LocalizedError {
 
-    var errors = [String]()
+    public var errors = [String]()
+    public let urlResponse: URLResponse?
+    public let urlRequest: URLRequest?
+    public var statusCode: Int? {
+        return (urlResponse as? HTTPURLResponse)?.statusCode
+    }
 
-    var errorDescription: String? {
+
+    public init(_ urlResponse: URLResponse? = nil, _ urlRequest: URLRequest? = nil) {
+        self.urlResponse = urlResponse
+        self.urlRequest = urlRequest
+    }
+
+    public var errorDescription: String? {
         return errors.joined()
     }
 }

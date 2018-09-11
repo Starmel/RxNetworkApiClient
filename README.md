@@ -95,6 +95,12 @@ Show in output
 >>> https://jsonplaceholder.typicode.comtodo/add [POST] Parameters: {"date":558022549.47259104,"text":"note text","warning_level":9223372036854775807}
 ```
 
+## Custom Response Handler
+
+Before returning result to subscriber response is stepping over stack of ResponseHandler's
+
+
+
 ## File uploading
 
 ```swift
