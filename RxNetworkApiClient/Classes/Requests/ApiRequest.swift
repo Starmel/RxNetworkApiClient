@@ -66,7 +66,7 @@ public class ApiRequest<ResponseType: Codable>: NetworkRequest {
     }
 
     public func updateFormData() { // FORM DATA
-        if files?.isEmpty == true, let formData = formData {
+        if (files == nil || files?.isEmpty == true), let formData = formData {
             request.httpBody = formData.compactMap { key, value -> String in
                 return "\(key)=\(value ?? "")"
             }.joined(separator: "&").data(using: .utf8)
