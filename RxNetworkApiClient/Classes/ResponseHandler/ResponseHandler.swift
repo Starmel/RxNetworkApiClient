@@ -16,7 +16,7 @@ public protocol ResponseHandler {
     ///   - request: Запрос, который был отправлен.
     ///   - response: Ответ, полученный от сервера.
     /// - Returns: Был ли ответ обработан.
-    func handle<T: Codable>(observer: SingleObserver<T>,
+    func handle<T: Codable>(observer: @escaping SingleObserver<T>,
                             request: ApiRequest<T>,
                             response: NetworkResponse) -> Bool
 }

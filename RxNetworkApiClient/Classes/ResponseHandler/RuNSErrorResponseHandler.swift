@@ -12,10 +12,10 @@ public class RuNSErrorResponseHandler: ResponseHandler {
     public init() {
     }
 
-    public func handle<T: Codable>(observer: SingleObserver<T>,
+    public func handle<T: Codable>(observer: @escaping SingleObserver<T>,
                                    request: ApiRequest<T>,
                                    response: NetworkResponse) -> Bool {
-        if let errorCode = (response.error as? NSError)?.code {
+        if let errorCode = (response.error as NSError?)?.code {
             let errorResponseEntity = ResponseErrorEntity(response.urlResponse)
             let errorMessage = errorCodeToMessage(errorCode)
             errorResponseEntity.errors.append(errorMessage)
