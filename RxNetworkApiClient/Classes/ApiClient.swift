@@ -12,7 +12,7 @@ public typealias SingleObserver<T> = (SingleEvent<T>) -> ()
 
 
 /// Клиент для выполнения сетевых api запросов.
-public protocol ApiClient {
+public protocol ApiClient: class {
 
     /// - Parameter request: Запрос, который нужно выполнить
     /// - Returns: Объект, который нужно вернуть при успешном завершении.

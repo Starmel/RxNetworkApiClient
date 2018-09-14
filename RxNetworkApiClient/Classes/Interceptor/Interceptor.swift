@@ -7,7 +7,7 @@ import Foundation
 
 
 /// Служит для модификации запроса перед отправкой и выполнения логики после получения ответа.
-public protocol Interceptor {
+public protocol Interceptor: class {
 
     func prepare<T: Codable>(request: ApiRequest<T>)
 

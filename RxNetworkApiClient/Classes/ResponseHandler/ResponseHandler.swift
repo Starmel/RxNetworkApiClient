@@ -7,7 +7,7 @@ import RxSwift
 
 
 /// Занимается обработкой приходящих ответов от сервера или ошибок во время отправки запроса.
-public protocol ResponseHandler {
+public protocol ResponseHandler: class {
 
     /// Обработать ответ.
     ///
