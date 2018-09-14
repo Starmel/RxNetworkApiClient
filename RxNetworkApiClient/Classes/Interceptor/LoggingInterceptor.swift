@@ -9,26 +9,27 @@ import Foundation
 /// Позволяет логировать в консоль совершаемые http запросы.
 public class LoggingInterceptor: Interceptor {
 
-    public init(){
-
+    public init() {
     }
 
-    public func prepare(request: inout URLRequest) {
+    public func prepare<T: Codable>(request: ApiRequest<T>) {
+        let urlRequest = request.request
         var parameters = ""
-        if let params = request.httpBody {
+        if let params = urlRequest.httpBody {
             let body = String(data: params, encoding: .utf8)
                     ?? String(data: params, encoding: .ascii)
                     ?? "\(params)"
             parameters = "Parameters: \(body)"
         }
 
-        request.allHTTPHeaderFields?.forEach { key, value in
+        urlRequest.allHTTPHeaderFields?.forEach { key, value in
             print(">>> Header: '\(key)' - '\(value)'")
         }
-        print(">>> \(request.url!.absoluteString) [\(request.httpMethod ?? "NULL")] \(parameters)\n")
+        print(">>> \(urlRequest.url!.absoluteString) [\(urlRequest.httpMethod ?? "NULL")] \(parameters)\n")
     }
 
-    public func handle(response: NetworkResponse) {
+
+    public func handle<T: Codable>(request: ApiRequest<T>, response: NetworkResponse) {
         if let urlResponse = response.urlResponse {
             var responseBody = ""
             if let data = response.data {
@@ -49,13 +50,13 @@ public class LoggingInterceptor: Interceptor {
     }
 
     private func getStatusEmoji(_ code: Int) -> String {
-        switch code {
-            case 200:
-                return "👌"
-            case 500:
-                return "💥"
-            default:
-                return "⚠️"
+        if (200...300).contains(code) {
+            return "👌"
+        } else if (400...500).contains(code) {
+            return "🤔"
+        } else if (500...600).contains(code) {
+            return "💥"
         }
+        return ""
     }
 }

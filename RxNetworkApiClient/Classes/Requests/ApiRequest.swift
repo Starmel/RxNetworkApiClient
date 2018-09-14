@@ -12,16 +12,16 @@ public typealias QueryField = (String, String?)
 public typealias FormDataFields = Dictionary<String, Any?>
 
 
-public class ApiRequest<ResponseType: Codable>: NetworkRequest {
+open class ApiRequest<ResponseType: Codable>: NetworkRequest {
 
-    public var request: URLRequest
-    public var responseTimeout: Double = 10
-    private var endpoint: ApiEndpoint
-    private var query: [QueryField]? = nil
-    private var path: String? = nil
-    private var formData: FormDataFields? = nil
-    private var headers: [Header]? = nil
-    private var files: [UploadFile]? = nil
+    open var request: URLRequest
+    open var responseTimeout: Double = 10
+    open var endpoint: ApiEndpoint
+    open var query: [QueryField]? = nil
+    open var path: String? = nil
+    open var formData: FormDataFields? = nil
+    open var headers: [Header]? = nil
+    open var files: [UploadFile]? = nil
 
 
     public init(method: HttpMethod, endpoint: ApiEndpoint) {

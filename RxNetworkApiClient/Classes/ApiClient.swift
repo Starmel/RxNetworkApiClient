@@ -62,7 +62,7 @@ public class ApiClientImp: ApiClient {
                     let dataTask: URLSessionDataTask = self.urlSession
                             .dataTask(with: request.request) { (data, response, error) in
 
-                        self.preHandle((data, response, error))
+                        self.preHandle(request, (data, response, error))
                         var isHandled = false
                         for handler in self.responseHandlersQueue {
                             if isHandled {
@@ -93,10 +93,9 @@ public class ApiClientImp: ApiClient {
     /// Вызывается перед тем, как обработается ответ от сервера.
     ///
     /// - Parameter response: Полученный ответ.
-    private func preHandle(_ response: NetworkResponse) {
-        interceptors.forEach {
-            interceptor in
-            interceptor.handle(response: response)
+    private func preHandle<T: Codable>(_ request: ApiRequest<T>, _ response: NetworkResponse) {
+        interceptors.forEach { interceptor in
+            interceptor.handle(request: request, response: response)
         }
     }
 
@@ -104,9 +103,8 @@ public class ApiClientImp: ApiClient {
     ///
     /// - Parameter request: Запрос, который отправляется.
     private func prepare<T>(_ request: ApiRequest<T>) {
-        interceptors.forEach {
-            interceptor in
-            interceptor.prepare(request: &request.request)
+        interceptors.forEach { interceptor in
+            interceptor.prepare(request: request)
         }
     }
 
