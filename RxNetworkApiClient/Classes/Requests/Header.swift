@@ -15,7 +15,7 @@ public struct Header {
     public let value: String
 
 
-    init(_ key: String, _ value: String) {
+    public init(_ key: String, _ value: String) {
         self.key = key
         self.value = value
     }
