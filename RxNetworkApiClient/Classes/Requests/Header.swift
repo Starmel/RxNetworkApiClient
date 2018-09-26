@@ -13,22 +13,19 @@ public struct Header {
 
     public let key: String
     public let value: String
+
+
+    init(_ key: String, _ value: String) {
+        self.key = key
+        self.value = value
+    }
 }
 
 
 public extension Header {
 
-    public static func contentJson() -> Header {
-        return header("Content-Type", "application/json; charset=utf-8")
-    }
-
-    public static func acceptJson() -> Header {
-        return header("Accept", "application/json")
-    }
-
-    public static func header(_ key: String, _ value: String) -> Header {
-        return Header(key: key, value: value)
-    }
+    public static let contentJson = Header("Content-Type", "application/json; charset=utf-8")
+    public static let acceptJson = Header("Accept", "application/json")
 }
 
 
