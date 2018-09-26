@@ -7,12 +7,18 @@ import Foundation
 
 
 public protocol JsonBodyConvertible: BodyConvertible, Codable {
+
+    var jsonEncoder: JSONEncoder { get }
 }
 
 
 public extension JsonBodyConvertible {
 
+    public var jsonEncoder: JSONEncoder {
+        return JSONEncoder()
+    }
+
     public func createBody() -> Data {
-        return try! JSONEncoder().encode(self)
+        return try! jsonEncoder.encode(self)
     }
 }

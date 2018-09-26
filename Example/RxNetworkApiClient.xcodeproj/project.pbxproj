@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5860303EEEF6C47C8EB18CA3 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586032E21C9F493B11F48B64 /* Requests.swift */; };
 		58603312AFAD7732C33F3949 /* TodoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586031171403E7015091AE07 /* TodoEntity.swift */; };
+		58603BA70C0F7E176D810329 /* SimpleGetRequestsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586032C40F34BD359BA8B809 /* SimpleGetRequestsTest.swift */; };
+		58603C86A26352C643049F80 /* BseRequestsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58603209B0442949FFE47736 /* BseRequestsTest.swift */; };
+		58603F5F29E7E6A95D0CA478 /* ApiResultEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58603619E97C3C483934A23F /* ApiResultEntity.swift */; };
 		5AA56378AF505CC1290E6CA3 /* Pods_RxNetworkApiClient_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE616D3F4C5017920D12B9DC /* Pods_RxNetworkApiClient_Example.framework */; };
 		5E78881C867F7E233CB4E305 /* Pods_RxNetworkApiClient_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48C6879050D92FFB15B52CE7 /* Pods_RxNetworkApiClient_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
@@ -33,7 +36,10 @@
 		37347BC06CEF9CCAEA6EFEB3 /* Pods-RxNetworkApiClient_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNetworkApiClient_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxNetworkApiClient_Example/Pods-RxNetworkApiClient_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		48C6879050D92FFB15B52CE7 /* Pods_RxNetworkApiClient_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxNetworkApiClient_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		586031171403E7015091AE07 /* TodoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoEntity.swift; sourceTree = "<group>"; };
+		58603209B0442949FFE47736 /* BseRequestsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BseRequestsTest.swift; sourceTree = "<group>"; };
+		586032C40F34BD359BA8B809 /* SimpleGetRequestsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleGetRequestsTest.swift; sourceTree = "<group>"; };
 		586032E21C9F493B11F48B64 /* Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		58603619E97C3C483934A23F /* ApiResultEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResultEntity.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RxNetworkApiClient_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxNetworkApiClient_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +77,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5860333DFA4F50B034AAA09D /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				58603FED871C0AC47D0ABC79 /* SimpleRequests */,
+				5860396298F99D18A4DAFE0D /* Entities */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		5860396298F99D18A4DAFE0D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				58603619E97C3C483934A23F /* ApiResultEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		58603FED871C0AC47D0ABC79 /* SimpleRequests */ = {
+			isa = PBXGroup;
+			children = (
+				586032C40F34BD359BA8B809 /* SimpleGetRequestsTest.swift */,
+				58603209B0442949FFE47736 /* BseRequestsTest.swift */,
+			);
+			path = SimpleRequests;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACE91AFB9204008FA782 /* Supporting Files */,
+				5860333DFA4F50B034AAA09D /* Requests */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -342,7 +375,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				58603BA70C0F7E176D810329 /* SimpleGetRequestsTest.swift in Sources */,
+				58603C86A26352C643049F80 /* BseRequestsTest.swift in Sources */,
+				58603F5F29E7E6A95D0CA478 /* ApiResultEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

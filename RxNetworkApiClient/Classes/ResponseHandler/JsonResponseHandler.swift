@@ -8,7 +8,7 @@ import SwiftyJSON
 
 
 /// Возвращает требуемый объект или JSON объект, если ответ успешный.
-public class JsonResponseHandler: ResponseHandler {
+open class JsonResponseHandler: ResponseHandler {
 
     public init() {
     }

@@ -7,7 +7,7 @@ import Foundation
 
 
 /// Русифицирует коды ошибок, которые могут вернуться от внутренней ошибки сети.
-public class RuNSErrorResponseHandler: ResponseHandler {
+open class RuNSErrorResponseHandler: ResponseHandler {
 
     public init() {
     }
@@ -25,7 +25,7 @@ public class RuNSErrorResponseHandler: ResponseHandler {
         return false
     }
 
-    private func errorCodeToMessage(_ code: Int) -> String {
+    open func errorCodeToMessage(_ code: Int) -> String {
         switch code {
             case -1011: return "Система загрузки URL-адресов получила плохие данные с сервера."
             case -1000: return "Недопустимый URL-адрес предотвратил запуск запроса URL-адреса."

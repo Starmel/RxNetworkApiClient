@@ -1,115 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9627e41a-3f0c-4c32-b758-7ddb6e886fa0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../RxNetworkApiClient.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/../RxNetworkApiClient.podspec" afterDir="false" />
+    <list default="true" id="9627e41a-3f0c-4c32-b758-7ddb6e886fa0" name="Default Changelist" comment="update to 0.0.3">
+      <change afterPath="$PROJECT_DIR$/Tests/Requests/Entities/ApiResultEntity.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Requests/SimpleRequests/BseRequestsTest.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/Requests/SimpleRequests/SimpleGetRequestsTest.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxNetworkApiClient.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/RxNetworkApiClient.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxNetworkApiClient/Requests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/RxNetworkApiClient/Requests.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RxNetworkApiClient/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/RxNetworkApiClient/ViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/Tests.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RxNetworkApiClient/Classes/BodyConverters/JsonBodyConvertible.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../RxNetworkApiClient/Classes/BodyConverters/JsonBodyConvertible.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Interceptor/AuthInterceptor.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Interceptor/LoggingInterceptor.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Interceptor/LoggingInterceptor.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/ApiRequest.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/ApiRequest.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/Header.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/Header.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/HttpMethod.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/HttpMethod.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/JsonResponseHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/JsonResponseHandler.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/RuNSErrorResponseHandler.swift" beforeDir="false" afterPath="$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/RuNSErrorResponseHandler.swift" afterDir="false" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/RxNetworkApiClient-bdhunzljpmdzdebxisctfkqkkddb/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_BB43D827-1B7F-4C2A-BA72-6A37E79D68D4" />
-  <component name="FUSProjectUsageTrigger">
-    <session id="1253159111">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="md" value="1051" />
-          <entry key="swift" value="1099" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Markdown" value="1051" />
-          <entry key="Swift" value="1099" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="md" value="1" />
-          <entry key="swift" value="27" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Markdown" value="1" />
-          <entry key="Swift" value="27" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.appcode.build">
-        <counts>
-          <entry key="buildservice" value="27" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_86DBBE14-9D64-4972-82A9-0660BBE361FF" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RxNetworkApiClient/TodoEntity.swift">
+    <leaf>
+      <file leaf-file-name="ApiRequest.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/ApiRequest.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="420">
+              <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="172">
-                <caret line="12" selection-start-line="12" selection-end-line="12" />
-              </first_editor>
-              <second_editor>
-                <markdownNavigatorState />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/ApiClient.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="108" column="52" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/ApiEndpoint.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/BodyConverters/JsonBodyConvertible.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="35" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RxNetworkApiClient/ViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="93" lean-forward="true" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
+            <state relative-caret-position="166">
+              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
               <folding>
                 <element signature="e#149#161#0" expanded="true" />
               </folding>
@@ -117,29 +52,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/ApiRequest.swift">
+      <file leaf-file-name="Requests.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RxNetworkApiClient/Requests.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="118" column="55" lean-forward="true" selection-start-line="118" selection-start-column="55" selection-end-line="118" selection-end-column="55" />
+            <state relative-caret-position="90">
+              <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/HttpMethod.swift">
+      <file leaf-file-name="ApiEndpoint.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/ApiEndpoint.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/BodyConverters/BodyConvertible.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            <state relative-caret-position="165">
+              <caret line="11" column="34" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -150,6 +76,11 @@
     <findStrings>
       <find>network error</find>
       <find>pro-web-coder</find>
+      <find>ResponseErrorEntity</find>
+      <find>request</find>
+      <find>query</find>
+      <find>endpoint</find>
+      <find>?</find>
     </findStrings>
     <replaceStrings>
       <replace>starmel</replace>
@@ -162,14 +93,30 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/RxNetworkApiClient/ArticleEntity.swift" />
-        <option value="$PROJECT_DIR$/RxNetworkApiClient/Requests.swift" />
-        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Interceptor/LoggingInterceptor.swift" />
-        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/JsonResponseHandler.swift" />
-        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/BasicErrorResponseHandler.swift" />
-        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/ApiClient.swift" />
-        <option value="$PROJECT_DIR$/../README.md" />
         <option value="$PROJECT_DIR$/RxNetworkApiClient/TodoEntity.swift" />
+        <option value="$PROJECT_DIR$/../README.md" />
+        <option value="$PROJECT_DIR$/Tests/Tests.swift" />
+        <option value="$PROJECT_DIR$/Tests/SimpleRequests/SimpleGetRequestsTest.swift" />
+        <option value="$PROJECT_DIR$/Tests/Requests/Entities/ApiResultEntity.swift" />
+        <option value="$PROJECT_DIR$/Tests/Requests/SimpleRequests/BseRequestsTest.swift" />
+        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/BasicErrorResponseHandler.swift" />
+        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseErrorEntity.swift" />
+        <option value="$PROJECT_DIR$/../deployPod.sh" />
+        <option value="$PROJECT_DIR$/../RxNetworkApiClient.podspec" />
+        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/ApiClient.swift" />
+        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Interceptor/Interceptor.swift" />
+        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/ResponseHandler.swift" />
+        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/HttpMethod.swift" />
+        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/JsonResponseHandler.swift" />
+        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/RuNSErrorResponseHandler.swift" />
+        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Interceptor/LoggingInterceptor.swift" />
+        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/BodyConverters/JsonBodyConvertible.swift" />
+        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/UploadFile.swift" />
+        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/Header.swift" />
+        <option value="$PROJECT_DIR$/Tests/Requests/SimpleRequests/SimpleGetRequestsTest.swift" />
         <option value="$PROJECT_DIR$/RxNetworkApiClient/ViewController.swift" />
+        <option value="$PROJECT_DIR$/RxNetworkApiClient/Requests.swift" />
+        <option value="$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/ApiRequest.swift" />
       </list>
     </option>
   </component>
@@ -182,11 +129,55 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Cidr.FilesView" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Cidr.FilesView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="RxNetworkApiClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RxNetworkApiClient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RxNetworkApiClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RxNetworkApiClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Example" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RxNetworkApiClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RxNetworkApiClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Example" type="462c0819:PsiDirectoryNode" />
+              <item name="RxNetworkApiClient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RxNetworkApiClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RxNetworkApiClient" type="462c0819:PsiDirectoryNode" />
+              <item name="RxNetworkApiClient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RxNetworkApiClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RxNetworkApiClient" type="462c0819:PsiDirectoryNode" />
+              <item name="RxNetworkApiClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RxNetworkApiClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RxNetworkApiClient" type="462c0819:PsiDirectoryNode" />
+              <item name="RxNetworkApiClient" type="462c0819:PsiDirectoryNode" />
+              <item name="Classes" type="462c0819:PsiDirectoryNode" />
+              <item name="Requests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RxNetworkApiClient" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,36 +196,16 @@
               <item name="Development Pods" type="fcab9f18:XcodeViewNode" />
               <item name="RxNetworkApiClient" type="fcab9f18:XcodeViewNode" />
             </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="Pods" type="1d218c8b:XcodeProjectNode" />
-              <item name="Development Pods" type="fcab9f18:XcodeViewNode" />
-              <item name="RxNetworkApiClient" type="fcab9f18:XcodeViewNode" />
-              <item name="Requests" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="RxNetworkApiClient" type="1d218c8b:XcodeProjectNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="RxNetworkApiClient" type="1d218c8b:XcodeProjectNode" />
-              <item name="Example for RxNetworkApiClient" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="RxNetworkApiClient" type="1d218c8b:XcodeProjectNode" />
-              <item name="Tests" type="fcab9f18:XcodeViewNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Cidr.FilesView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="RxNetworkApiClient_Example" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="com.jetbrains.cidr.execution.build.XcodeMessageFilterConfiguration.NOTE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/RxNetworkApiClient.xcworkspace" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -251,6 +222,20 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Application.RxNetworkApiClient-Example">
+    <configuration name="Pods-RxNetworkApiClient_Example" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="_Pods" TARGET_NAME="Pods-RxNetworkApiClient_Example" CONFIG_NAME="Debug" SCHEME_NAME="Pods-RxNetworkApiClient_Example" IS_LOCATION_SIMULATION_ALLOWED="true" MAKE_ACTIVE="TRUE" />
+    <configuration name="SimpleGetRequestsTest" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="RxNetworkApiClient" TARGET_NAME="RxNetworkApiClient_Tests" CONFIG_NAME="Debug" SCHEME_NAME="SimpleGetRequestsTest" IS_LOCATION_SIMULATION_ALLOWED="true" TEST_CLASS="SimpleGetRequestsTest" TEST_MODE="SUITE_TEST" />
+    <list>
+      <item itemvalue="Application.Pods-RxNetworkApiClient_Example" />
+      <item itemvalue="Application.RxNetworkApiClient-Example" />
+      <item itemvalue="XCTest.SimpleGetRequestsTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="XCTest.SimpleGetRequestsTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9627e41a-3f0c-4c32-b758-7ddb6e886fa0" name="Default Changelist" comment="" />
@@ -259,65 +244,133 @@
       <option name="presentableId" value="Default" />
       <updated>1536326250671</updated>
     </task>
+    <task id="LOCAL-00001" summary="add timeout setting to ApiRequest entity&#10;add initial ApiRequest to ResponseHandler as argument &#10;update ApiClient protocol&#10;rename NSErrorResponseHandler">
+      <created>1536657661938</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1536657661939</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add pod deploying script, update podspec to 0.0.2 version">
+      <created>1536660693997</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1536660693997</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add @escaping annotation">
+      <created>1536663610742</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1536663610742</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update to 0.0.3">
+      <created>1536663663128</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1536663663128</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix FormData sending, update to 0.0.4">
+      <created>1536667996435</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1536667996435</updated>
+    </task>
+    <task id="LOCAL-00006" summary="0.0.4 &#10;update Interceptor arguments,&#10;update emoji">
+      <created>1536916867902</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1536916867903</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add 'class' mark to protocols 0.0.6">
+      <created>1536917544345</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1536917544345</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="SimpleGetRequestsTest - 2018.09.09 at 10h 27m 55s.xml">
+      <configuration name="SimpleGetRequestsTest" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="SimpleGetRequestsTest - 2018.09.09 at 10h 28m 15s.xml">
+      <configuration name="SimpleGetRequestsTest" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="SimpleGetRequestsTest - 2018.09.09 at 10h 30m 05s.xml">
+      <configuration name="SimpleGetRequestsTest" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="SimpleGetRequestsTest - 2018.09.09 at 10h 31m 05s.xml">
+      <configuration name="SimpleGetRequestsTest" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="SimpleGetRequestsTest - 2018.09.26 at 15h 18m 50s.xml">
+      <configuration name="SimpleGetRequestsTest" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="SimpleGetRequestsTest - 2018.09.26 at 15h 19m 18s.xml">
+      <configuration name="SimpleGetRequestsTest" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="SimpleGetRequestsTest - 2018.09.26 at 15h 19m 56s.xml">
+      <configuration name="SimpleGetRequestsTest" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+    <history-entry file="SimpleGetRequestsTest - 2018.09.26 at 15h 20m 45s.xml">
+      <configuration name="SimpleGetRequestsTest" configurationId="OCUnitRunConfiguration" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1112" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="1119" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32941177" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Statistic" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32941177" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32876712" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3776908" />
+      <window_info anchor="right" id="Jenkins" order="3" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
+      <window_info anchor="bottom" id="Statistic" order="8" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39921722" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Jenkins" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add timeout setting to ApiRequest entity&#10;add initial ApiRequest to ResponseHandler as argument &#10;update ApiClient protocol&#10;rename NSErrorResponseHandler" />
+    <MESSAGE value="add pod deploying script, update podspec to 0.0.2 version" />
+    <MESSAGE value="add @escaping annotation" />
+    <MESSAGE value="update to 0.0.3" />
+    <MESSAGE value="fix FormData sending, update to 0.0.4" />
+    <MESSAGE value="0.0.4 &#10;update Interceptor arguments,&#10;update emoji" />
+    <MESSAGE value="add 'class' mark to protocols 0.0.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="add 'class' mark to protocols 0.0.6" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/Interceptor/LoggingInterceptor.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/Interceptor/AuthInterceptor.swift">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/BasicErrorResponseHandler.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="49" column="52" lean-forward="true" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/ResponseHandler.swift">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/JsonResponseHandler.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/9F2000/4.1.2/arm64/iphoneos11.4/Foundation.NSURLSession/Foundation.NSURLSession.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -325,30 +378,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseErrorEntity.swift">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/Resources/module_cache.zip!/ModuleCache/9F2000/4.1.2/arm64/iphoneos11.4/UIKit.UIRefreshControl/UIKit.UIRefreshControl.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RxNetworkApiClient/Requests.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#96#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/BodyConverters/JsonBodyConvertible.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -359,10 +392,179 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RxNetworkApiClient/TodoEntity.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1455">
+            <caret line="97" column="26" selection-start-line="97" selection-start-column="26" selection-end-line="97" selection-end-column="26" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/AppCode2018.2/ModuleCache/9F2000/4.1.2/arm64/iphoneos11.4/XCTest/XCTest.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-295">
+          <caret line="775" column="14" selection-start-line="775" selection-start-column="14" selection-end-line="775" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Requests/Entities/ApiResultEntity.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/BaseRequest.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseErrorEntity.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="50" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Requests/SimpleRequests/BseRequestsTest.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="96" selection-start-line="12" selection-start-column="96" selection-end-line="12" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
+    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient.podspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/ApiClient.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="77" column="43" lean-forward="true" selection-start-line="77" selection-start-column="43" selection-end-line="77" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../deployPod.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/RuNSErrorResponseHandler.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/JsonResponseHandler.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/ResponseHandler/ResponseHandler.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/Interceptor/AuthInterceptor.swift">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/Interceptor/LoggingInterceptor.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/Interceptor/Interceptor.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/BodyConverters/BodyConvertible.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/UploadFile.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/Header.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/BodyConverters/JsonBodyConvertible.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/HttpMethod.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        <state relative-caret-position="105">
+          <caret line="10" column="69" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/Requests/SimpleRequests/SimpleGetRequestsTest.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="11" column="89" lean-forward="true" selection-start-line="11" selection-start-column="89" selection-end-line="11" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RxNetworkApiClient/ViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding>
+            <element signature="e#149#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RxNetworkApiClient/Requests.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -373,53 +575,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/BodyConverters/BodyConvertible.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/Requests/ApiRequest.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="118" column="55" lean-forward="true" selection-start-line="118" selection-start-column="55" selection-end-line="118" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../RxNetworkApiClient/Classes/ApiClient.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="108" column="52" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="172">
-            <caret line="12" selection-start-line="12" selection-end-line="12" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RxNetworkApiClient/TodoEntity.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RxNetworkApiClient/ViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="93" lean-forward="true" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
-          <folding>
-            <element signature="e#149#161#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="420">
+          <caret line="28" column="59" selection-start-line="28" selection-start-column="59" selection-end-line="28" selection-end-column="59" />
         </state>
       </provider>
     </entry>

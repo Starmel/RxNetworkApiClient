@@ -10,6 +10,10 @@ import RxNetworkApiClient
 extension ApiRequest {
 
     static func todoList() -> ApiRequest {
-        return request(path: "/todos", method: .GET)
+        return request(path: "/todos", method: .get)
+    }
+
+    static func crate() -> ApiRequest {
+        return request(path: "/todos", method: .post, formData: ["data": "ok"])
     }
 }

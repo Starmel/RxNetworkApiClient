@@ -8,5 +8,5 @@ import Foundation
 
 /// Типы http запросов, которые могут совершаться.
 public enum HttpMethod: String {
-    case GET, POST, PUT, PATH, DELETE, COPY, HEAD, OPTIONS, LINK, UNLINK, PURGE, LOCK, UNLOCK, PROPFIND, VIEW
+    case get, post, put, path, delete, copy, head, options, link, unlink, purge, lock, unlock, propfind, view
 }

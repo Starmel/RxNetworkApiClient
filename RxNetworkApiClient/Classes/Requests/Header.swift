@@ -11,8 +11,8 @@ import Foundation
 
 public struct Header {
 
-    let key: String
-    let value: String
+    public let key: String
+    public let value: String
 }
 
 

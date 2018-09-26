@@ -7,7 +7,7 @@ import Foundation
 
 
 /// Позволяет логировать в консоль совершаемые http запросы.
-public class LoggingInterceptor: Interceptor {
+open class LoggingInterceptor: Interceptor {
 
     public init() {
     }
