@@ -17,7 +17,7 @@ class TodoItem: Codable{
 
 
 let apiClient = ApiClientImp.defaultInstance("https://jsonplaceholder.typicode.com")
-let request: ApiRequest<TodoItem> = .request(path: "/todos", method: .GET)
+let request: ApiRequest<TodoItem> = .request(path: "/todos", method: .get)
 
 apiClient.execute(request)
     .subscribe(onSuccess: { (items: [TodoItem])
@@ -84,8 +84,8 @@ struct NoteEntity: JsonBodyConvertible {
 
 
 let note = NoteEntity(date: Date(), text: "note text", warning_level: Int.max)
-let request: ApiRequest<JSON> = .request(path: "todo/add",
-                                         method: .POST,
+let request: ApiRequest<JSON> = .request(path: "/todo/add",
+                                         method: .post,
                                          body: note)
 
 apiClient.execute(request: request).subscribe()
@@ -113,7 +113,7 @@ let imgs = ["https://pp.userapi.com/c834302/v834302737/278d7/DoAiIaCb5hY.jpg?ava
 let files = [UploadFile(name: "file 1.jpg", data: imgs[0], mimeType: "jpg"),
                   UploadFile(name: "file 2.jpg", data: imgs[1], mimeType: "jpg")]
 
-let request: ApiRequest<JSON> = .request("/file/add", method: .POST, files: files)
+let request: ApiRequest<JSON> = .request("/file/add", method: .post, files: files)
 
 apiClient.execute(request: request).subscribe()
 ```

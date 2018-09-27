@@ -117,7 +117,7 @@ fileprivate extension Data {
 fileprivate extension Array where Element == QueryField {
 
     func toString() -> String {
-        if self.count >= 2 {
+        if !self.isEmpty {
             let flatStringQuery = self.filter({ $0.1?.isEmpty == false })
                     .compactMap({ "\($0)=\($1!)" })
                     .joined(separator: "&")
