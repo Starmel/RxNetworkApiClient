@@ -13,7 +13,7 @@ extension ApiRequest {
         return request(path: "/todos", method: .get)
     }
 
-    static func crate() -> ApiRequest {
-        return request(path: "/todos", method: .post, formData: ["data": "ok"])
+    static func create() -> ApiRequest {
+        return request(path: "/todos", method: .post, formData: ["exampleKey": "exampleValue"])
     }
 }

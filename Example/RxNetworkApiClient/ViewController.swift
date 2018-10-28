@@ -9,7 +9,6 @@
 import UIKit
 import RxNetworkApiClient
 import RxSwift
-import SwiftyJSON
 
 
 class ViewController: UITableViewController {
@@ -33,12 +32,8 @@ class ViewController: UITableViewController {
     private func loadItems() {
         _ = apiClient.execute(request: .todoList())
                 .observeOn(MainScheduler.instance)
-                .do(onSubscribed: {
-                    self.refreshControl?.beginRefreshing()
-                }, onDispose: {
-                    self.refreshControl?.endRefreshing()
-                })
-                .observeOn(MainScheduler.instance)
+                .do(onSubscribed: self.refreshControl?.beginRefreshing,
+                    onDispose: self.refreshControl?.endRefreshing)
                 .subscribe(onSuccess: { (todos: [TodoEntity]) in
                     self.todos = todos
                     self.tableView.reloadData()
