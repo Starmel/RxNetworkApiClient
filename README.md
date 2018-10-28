@@ -49,23 +49,36 @@ Builtin Logging interceptor result example:
 Example for custom OAuth2 interceptor:
 
 ```swift
-public class AuthInterceptor: Interceptor {
+import Foundation
+import RxNetworkApiClient
+import RxSwift
+
+
+class AuthInterceptor: Interceptor {
 
     private let settings: Settings
 
 
-    public init(_ settings: Settings) {
+    init(_ settings: Settings) {
         self.settings = settings
     }
 
-    public func prepare(request: inout URLRequest) {
-        let authHeader = request.allHTTPHeaderFields?["Authorization"]
-        if authHeader == nil, let auth = settings.authToken {
-            request.addValue("Bearer \(auth.token)", forHTTPHeaderField: "Authorization")
+    func prepare<T: Codable>(request: ApiRequest<T>) {
+        if let accessToken = settings.authCode?.accessToken {
+            let hasAuthHeader = request.headers?.contains(where: { header in
+                header.key == "Authentication"
+            })
+
+            if hasAuthHeader != true {
+                if request.headers == nil {
+                    request.headers = []
+                }
+                request.headers!.append(Header("Authentication", accessToken))
+            }
         }
     }
 
-    public func handle(response: NetworkResponse) {
+    func handle<T: Codable>(request: ApiRequest<T>, response: NetworkResponse) {
         // empty
     }
 }
