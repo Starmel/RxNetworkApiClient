@@ -16,7 +16,7 @@ open class ApiRequest<ResponseType: Codable>: NetworkRequest {
 
     open var request: URLRequest {
         var request = URLRequest(url: URL(string: endpoint.host)!)
-        request.httpMethod = method?.rawValue
+        request.httpMethod = method?.rawValue.uppercased()
 
         // Body construction
         if let body = self.body {
